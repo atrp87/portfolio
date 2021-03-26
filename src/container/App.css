@@ -1,0 +1,30 @@
+.content {
+    max-width: 800px;
+    margin: 15vh auto;
+    padding: 20px;
+    text-align: center;
+}
+
+*::selection {
+    color: #fff;
+    background-color: rgba(50,58,150,0.7);
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 19px;
+    height: 120px;
+    color: #fff;
+    background-color: #23232d;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4em;
+    color: #fff;
+}

@@ -1,0 +1,30 @@
+h1 {
+    font-size: 43px;
+}
+
+.about p {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 35px;
+    
+}
+
+.about button {
+    margin-top: 5px;
+    transition: all .5s ease;
+    color: #fff;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 13px;
+    background-color : transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 15px;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.about button:hover {
+    color:  #23232d;
+    background-color: #fff;
+}
