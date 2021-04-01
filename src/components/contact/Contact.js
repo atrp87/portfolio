@@ -1,4 +1,5 @@
 import ContactCSS from './Contact.module.css'
+import Form from './form/Form'
 
 const Contact = () => {
     return ( 
@@ -21,26 +22,7 @@ const Contact = () => {
                     Send me an email through this form to contact  
                     <a className="myEmail" href="mailto:drewpeattie@hotmail.com?subject=Hello Andrew" title="Andrew's Email"> drewpeattie@hotmail.com</a>
                 </p>
-                <form>
-                    <label for='name'>name:</label>
-                    <input
-                        id='name'
-                        type="text"
-                        required
-                    />
-                    <label for='email'>email:</label>
-                    <input
-                        id="email"
-                        type="email"
-                        required
-                    />
-                    <label for='msg'>message:</label>
-                    <textarea
-                        id='msg'
-                        required 
-                    />
-                    <button>Send</button>
-                </form>
+                <Form />
             </div>
     );
 }
