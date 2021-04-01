@@ -5,25 +5,22 @@ const Portfolio = () => {
     return ( 
         <div className={PortfolioCSS.portfolio}>
             <h1>Portfolio.</h1>
-            <p>Some of my latest projects I've woked on this year</p>
-            <div className={PortfolioCSS.projects}>
-                <div className="grid-item1">
-                    <img src={placeholder1} alt=""/>
+            <p>Some of my latest projects I've worked on this year</p>
+            <div className={PortfolioCSS.grid}>
+                <div className={PortfolioCSS.col}>
+                    <img src={placeholder1} alt="Portfolio Project Screenshot"/>
                 </div>
-                <div className="grid-item">
-                    <img src={placeholder1} alt=""/>
+                <div className={PortfolioCSS.col}>
+                    <img src={placeholder1} alt="Covid-19 Project Screenshot"/>
                 </div>
-                <div className="grid-item">
-                    <img src={placeholder1} alt=""/>
+                <div className={PortfolioCSS.col}>
+                    <img src={placeholder1} alt="Spending Tracker Project Screenshot"/>
                 </div>
-                <div className="grid-item">
-                    <img src={placeholder1} alt=""/>
+                <div className={PortfolioCSS.col}>
+                    <img src={placeholder1} alt="PYCP Project Screenshot"/>
                 </div>
-                <div className="grid-item">
-                    <img src={placeholder1} alt=""/>
-                </div>
-                <div className="grid-item">
-                    <img src={placeholder1} alt=""/>
+                <div className={PortfolioCSS.col}>
+                    <img src={placeholder1} alt="Blog Project Screenshot"/>
                 </div>
             </div>
         </div>
