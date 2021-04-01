@@ -1,0 +1,23 @@
+.unknown h1 {
+  font-size: 45px;
+}
+
+.unknown {
+  max-width: 500px;
+  padding: 40px;
+  text-align: left;
+  margin: auto;
+}
+
+.unknown a {
+  text-decoration: none;
+  transition: all 0.2s;
+  text-decoration: none;
+  line-height: 35px;
+  color: #fff;
+}
+.unknown a:hover {
+  
+  color: #7289da;
+}
+

@@ -1,0 +1,99 @@
+.socialWrapper {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+}
+
+.socialWrapper {
+  font-size: 33px;
+}
+
+.socialWrapper ul li {
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+  position: relative;
+  margin: 10px 0;
+  list-style: none;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.socialWrapper ul li .fab, .far, .fas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.socialWrapper ul li.linkedin{
+  background: #3b5998;
+}
+
+.socialWrapper ul li.github{
+  background: #444d56;
+}
+
+.socialWrapper ul li.email{
+  background: #4dc247;
+}
+
+.socialWrapper ul li.resume{
+  background: #6665d2;
+}
+
+.socialWrapper ul li.linkedin div.slider{
+  background: #627aac;
+}
+
+.socialWrapper ul li.github div.slider{
+  background: #6a737d;
+}
+
+.socialWrapper ul li.email div.slider{
+  background: #82d47e;
+}
+
+.socialWrapper ul li.resume div.slider{
+  background: #7289da;
+}
+
+.slider {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 51px;
+  width: 0px;
+  height: 50px;
+  border-radius: 3px;
+  transition: all 0.5s 0.3s ease;
+}
+
+.slider p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 20px;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.socialWrapper ul li:hover .slider {
+  width: 180px;
+  transition: all 0.5s ease;
+}
+
+.socialWrapper ul li:hover .slider p {
+  opacity: 1;
+  transition: all 1s 0.2s ease;
+}
+
+.socialWrapper a {
+  text-decoration: none;
+  color: #fff;
+}
