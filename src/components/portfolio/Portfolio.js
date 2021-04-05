@@ -1,12 +1,12 @@
 import PortfolioCSS from './Portfolio.module.css'
-import Grid from './grid/Grid'
+import Projects from './projects/Projects'
 
 const Portfolio = () => {
     return ( 
         <div className={PortfolioCSS.portfolio}>
             <h1>Portfolio.</h1>
-            <p>Some of my latest projects I've worked on this year</p>
-            <Grid />
+            <p>Here are a few projects I've worked on recently.</p>
+            <Projects />
         </div>
     );
 }

@@ -2,6 +2,7 @@ import AboutCSS from './About.module.css'
 import { Link } from 'react-router-dom';
 import React from 'react';
 
+ const swipeDelay = 'swipe swipe--delay'
 
 const About = () => {    
     return (
@@ -9,7 +10,7 @@ const About = () => {
             <div className={AboutCSS.swipe}>
                 <h1>Hi, I'm Andrew Peattie.</h1>
             </div>
-            <div className={AboutCSS.swipe + '&--delay'}>
+            <div className={AboutCSS.swipeDelay}>
                 <h3>Front-end Developer.</h3>
             </div>
             <div>

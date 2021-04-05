@@ -19,8 +19,9 @@
     color: #7289da;
 }
 
-.social-container {
-    display: flex;
-    column-gap: 20px;
-    justify-content: space-between;
+.contact .socialContainer {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
 }

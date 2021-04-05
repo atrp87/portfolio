@@ -1,5 +1,6 @@
 .aboutWrapper {
   margin: 0 auto;
+  padding: 0;
   max-width: 900px;
   display: flex;
   flex-direction: column;
@@ -23,14 +24,6 @@
     animation: swipe 1.5s ease-out 1s 
 forwards;
   }
-  &--delay {
-    &::after {
-    background-color: #fff;
-    animation-delay: 1.5s;
-    }
-  }
-}
-
 .aboutWrapper h1 {
   display: block;
   color: #fff;

@@ -1,9 +1,9 @@
 import SocialCSS from './Social.module.css'
+import TestCV from '../../../assets/test.pdf';
 import React from 'react'
 
 const Social = () => {
   return ( 
-
     <div className={SocialCSS.socialWrapper}>
       <ul>
         <li tabIndex='1' className={SocialCSS.linkedin}>
@@ -40,10 +40,12 @@ const Social = () => {
         {/* Link CV PDF  */}
 
         <li tabIndex='4' className={SocialCSS.resume}>
+          <a href={TestCV}>
           <i className="fas fa-file" aria-hidden="true"></i>
           <div className={SocialCSS.slider}>
             <p>RESUME</p>
           </div>
+        </a>
         </li>
       </ul>
     </div>
