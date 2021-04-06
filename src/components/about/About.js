@@ -1,16 +1,14 @@
-import AboutCSS from './About.module.css'
 import { Link } from 'react-router-dom';
 import React from 'react';
-
- const swipeDelay = 'swipe swipe--delay'
+import './About.css'
 
 const About = () => {    
     return (
-        <div className={AboutCSS.aboutWrapper}>
-            <div className={AboutCSS.swipe}>
+        <div className='wrapper'>
+            <div className='swipe'>
                 <h1>Hi, I'm Andrew Peattie.</h1>
             </div>
-            <div className={AboutCSS.swipeDelay}>
+            <div className='swipe swipe--delay'>
                 <h3>Front-end Developer.</h3>
             </div>
             <div>
