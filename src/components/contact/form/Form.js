@@ -1,19 +1,19 @@
 import FormCSS from './Form.module.css';
-import { FormspreeProvider } from '@formspree/react';
 import React, { useState } from 'react';
 import axios from 'axios'
 
 const Form = () => {
-  
-const [status, setStatus] = useState({
+  const [status, setStatus] = useState({
     submitted: false,
     submitting: false,
     info: { error: false, msg: null }
   })
+
   const [inputs, setInputs] = useState({
     email: '',
     message: ''
   })
+
   const handleServerResponse = (ok, msg) => {
     if (ok) {
       setStatus({
@@ -31,6 +31,7 @@ const [status, setStatus] = useState({
       })
     }
   }
+
   const handleOnChange = e => {
     e.persist()
     setInputs(prev => ({
@@ -43,6 +44,7 @@ const [status, setStatus] = useState({
       info: { error: false, msg: null }
     })
   }
+
   const handleOnSubmit = e => {
     e.preventDefault()
     setStatus(prevStatus => ({ ...prevStatus, submitting: true }))

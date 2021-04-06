@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 import './About.css'
 
+
 const About = () => {    
     return (
         <div className='wrapper'>

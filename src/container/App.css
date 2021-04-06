@@ -3,7 +3,9 @@
     background-color: rgba(50,58,150,0.7);
 }
 
-* { box-sizing: border-box }
+* { 
+    box-sizing: border-box 
+}
 
 input, textarea, button {
     font-family: inherit
