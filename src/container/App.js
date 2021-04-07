@@ -1,22 +1,25 @@
-import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
 import Unknown from '../components/navigation/unknown/Unknown';
 import Navbar from '../components/navigation/navbar/Navbar';
 import Social from '../components/navigation/social/social';
 import Portfolio from '../components/portfolio/Portfolio';
 import Contact from '../components/contact/Contact';
+import { AnimatePresence } from 'framer-motion';
 import About from '../components/about/About';
-// import { AnimatePresence } from 'framer-motion';
 import './App.css';
 
 
 function App() {
+
+  const location = useLocation();
+
   return (
-    <Router>
       <div className="App">
         <Navbar />
         <Social />
           <div className="content">
-              <Switch>
+            <AnimatePresence>
+              <Switch location={location} key={location.key}>
                 <Route exact path="/">
                   <About />
                 </Route>
@@ -30,9 +33,9 @@ function App() {
                   <Unknown />
                 </Route>
               </Switch>
+            </AnimatePresence>
           </div>
       </div>
-    </Router>
   );
 }
 

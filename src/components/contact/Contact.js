@@ -1,9 +1,29 @@
 import ContactCSS from './Contact.module.css';
+import { motion } from 'framer-motion';
 import Form from './form/Form';
+
+    const pageVariants = {
+        initial: {
+            opacity: 0
+        },
+        final: {
+            opacity: 1,
+            transition: {delay: 1, duration: 1}
+        },
+        exit: {
+            opacity: 0,
+            transition: {ease: 'easeInOut'}
+        }
+    }
 
 const Contact = () => {
     return ( 
-            <div className={ContactCSS.contact}>
+            <motion.div className={ContactCSS.contact}
+                variants={pageVariants}
+                initial='initial'
+                animate='final'
+                exit='exit'
+            >
                 <h1>Get in touch.</h1>
                 <p>Social Networks.</p>
                 <div className={ContactCSS.socialContainer}>
@@ -27,7 +47,7 @@ const Contact = () => {
                         <br></br>I look forward to hearing from you.
                 </p>
                 <Form />
-            </div>
+            </motion.div>
     );
 }
 

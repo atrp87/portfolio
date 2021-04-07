@@ -1,10 +1,11 @@
 import placeholder1 from '../../../assets/placeholder.jpeg';
-import ProjectsCSS from './Projects.module.css';
-import React from 'react';
 import Button from '../../navigation/button/Button';
+import ProjectsCSS from './Projects.module.css';
+
+import React from 'react';
+
 
 const Projects = () => {
-
   return ( 
     <div className={ProjectsCSS.wrapper}>
       <div className={ProjectsCSS.content}>

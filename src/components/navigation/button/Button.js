@@ -1,10 +1,14 @@
-import React from 'react';
+// import React, { useState } from 'react';
 
-const Button = (props) => {
+const handleClick = () => {
+  console.log('clicked');
+}
+
+const Button = () => {
   return ( 
     <button 
-      className="button" 
-      onCLick={props.handleClick}> View Project
+      className="button-default" 
+      onClick={handleClick}> View Project
     </button>
   );
 }
