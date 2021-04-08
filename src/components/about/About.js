@@ -1,3 +1,4 @@
+import AboutCSS from './About.module.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import React from 'react';
@@ -19,7 +20,7 @@ import './About.css'
 
 const About = () => {    
     return (
-        <motion.div className='wrapper'
+        <motion.div className={'wrapper'}
             variants={pageVariants}
             initial='initial'
             animate='final'

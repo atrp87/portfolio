@@ -1,0 +1,137 @@
+.wrapper h1 {
+  display: block;
+  color: #fff;
+  font-size: 72px;
+  line-height: 1;
+  padding-top: 15px 25px;
+  opacity: 0;
+  animation: fade .01s ease-out 1.75s forwards
+}
+
+.wrapper h3 {
+  display: block;
+  color: #fff;
+  font-size: 32px;
+  line-height: 1;
+  padding-top: 10px 20px;
+  opacity: 0;
+  animation: fade .01s ease-out 2.45s forwards;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+}
+
+.swipe {
+  position: relative;
+  width: fit-content;
+}
+
+.swipe::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  width: 0;
+  height: 100%;
+  background: #ff5858;
+  animation: swipe 1.5s ease-out 1s forwards;
+}
+
+.swipeD::after {
+  background-color: #fff;
+  animation-delay: 1.8s;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes swipe {
+  0% {
+    right: 100%;
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    right: 0;
+    left: 100%;
+    width: 0;
+  }
+}
+
+.wrapper p {
+  opacity: 0;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.wrapper button {
+  padding: 0px 1.8rem;
+  height: 50px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 50px;
+  opacity: 0;
+  color: #fff;
+  line-height: 23px;
+  background-color: #323a96;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.wrapper button:hover {
+  background-color: #2c3383;
+}
+
+.wrapper button {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

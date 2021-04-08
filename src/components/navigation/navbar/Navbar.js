@@ -11,7 +11,7 @@ const Navbar = () => {
     const closeMobileMenu = () => setClick(false);
 
     return ( 
-        <nav className={'navbar'}>
+        <nav className='navbar'>
             <div className='menu-icon' onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
             </div>

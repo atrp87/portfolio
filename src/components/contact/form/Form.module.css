@@ -40,6 +40,7 @@
 }
 
 .form button {
+    font-weight: 700;
     padding: 0px 1.8rem;
     height: 50px;
     font-size: 16px;
@@ -50,4 +51,5 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    letter-spacing: 1px;
 }
