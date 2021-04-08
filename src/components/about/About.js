@@ -5,19 +5,17 @@ import './About.css'
 
     const pageVariants = {
         initial: {
-            opacity: 0
+            opacity: 1
         },
         final: {
             opacity: 1,
-            transition: {delay: 1, duration: 1}
+            transition: {delay: 0.6, duration: 0.8}
         },
         exit: {
             opacity: 0,
             transition: {ease: 'easeInOut'}
         }
     }
-
-
 
 const About = () => {    
     return (

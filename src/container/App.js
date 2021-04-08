@@ -1,5 +1,5 @@
-import { Route, Switch, useLocation } from 'react-router-dom';
 import Unknown from '../components/navigation/unknown/Unknown';
+import { Route, Switch, useLocation } from 'react-router-dom';
 import Navbar from '../components/navigation/navbar/Navbar';
 import Social from '../components/navigation/social/social';
 import Portfolio from '../components/portfolio/Portfolio';
@@ -8,9 +8,7 @@ import { AnimatePresence } from 'framer-motion';
 import About from '../components/about/About';
 import './App.css';
 
-
 function App() {
-
   const location = useLocation();
 
   return (
@@ -18,7 +16,7 @@ function App() {
         <Navbar />
         <Social />
           <div className="content">
-            <AnimatePresence>
+            <AnimatePresence exitBeforeEnter>
               <Switch location={location} key={location.key}>
                 <Route exact path="/">
                   <About />

@@ -4,17 +4,27 @@ import { motion } from 'framer-motion';
 
     const pageVariants = {
         initial: {
-            opacity: 0
+            opacity: 0,
         },
         final: {
             opacity: 1,
-            transition: {delay: 1, duration: 1}
+            transition: {delay: 0.6, duration: 0.8}
         },
         exit: {
             opacity: 0,
             transition: {ease: 'easeInOut'}
         }
     }
+
+//     const childVariants = {
+//     hidden: {
+//         opacity: 0
+//     },
+//     visible: {
+//         opacity: 1
+//     }
+// }
+// Add slide in images or too much ? (staggerChildren: 0.4)
 
 const Portfolio = () => {
     return ( 

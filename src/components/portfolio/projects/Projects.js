@@ -1,18 +1,27 @@
 import placeholder1 from '../../../assets/placeholder.jpeg';
+import ruby from '../../../assets/ruby.png';
+import Modal from '../modal/Modal';
 import Button from '../../navigation/button/Button';
 import ProjectsCSS from './Projects.module.css';
-
-import React from 'react';
-
-
+import React, { useState } from 'react';
+  
 const Projects = () => {
-  return ( 
+
+    const[showModal, setShowModal] = useState(false);
+
+  const handleClick = () => {
+    setShowModal(true);
+  }
+  
+  <Modal showModal={showModal} setShowModal={setShowModal}/>
+  return (
+  <>
     <div className={ProjectsCSS.wrapper}>
       <div className={ProjectsCSS.content}>
         <img 
           src={placeholder1} 
           alt="Portfolio Screenshot"/>
-        <Button />
+        <Button Rby={handleClick}/>
       </div>
       <div className={ProjectsCSS.content}>
         <img 
@@ -22,7 +31,7 @@ const Projects = () => {
       </div>
       <div className={ProjectsCSS.content}>
         <img 
-          src={placeholder1} 
+          src={ruby} 
           alt="Portfolio Screenshot"/>
         <Button />
       </div>
@@ -33,6 +42,7 @@ const Projects = () => {
         <Button />
       </div>
     </div>
+  </>
   );
 }
 
