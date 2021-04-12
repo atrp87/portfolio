@@ -4,33 +4,12 @@ import Covid from '../../../assets/covid19.png';
 import ProjectsCSS from './Projects.module.css';
 import Pilton from '../../../assets/pycp.png';
 import React, { useState } from 'react';
-// import Modal from '../modal/Modal';
+import CovidM from '../modal/CovidM';
 
 const Projects = () => {
-	//   const[showModal, setShowModal] = useState(false);
+	const [isModelOpened, setIsModelOpened] = useState(false);
+	console.log('isModelOpened', isModelOpened);
 
-	// const handleClick = () => {
-	//   setShowModal(true);
-	// }
-
-	// <Modal showModal={showModal} setShowModal={setShowModal}/>
-
-	//   const pageVariants = {
-	//     initial: {
-	//         opacity: 0,
-	//     },
-	//     final: {
-	//         opacity: 1,
-	//         transition: {delay: 0.6, duration: 0.8}
-	//     },
-	//     exit: {
-	//         opacity: 0,
-	//         transition: {ease: 'easeInOut'}
-	//     }
-	// }
-
-	// const [ isShown, setIsShown ] = useState(false);
-	// {isShown && (<i className={`${ProjectsCSS} fas fa-eye`}></i> )}
 	return (
 		<div className={ProjectsCSS.wrapper}>
 			<div className={ProjectsCSS.items}>
@@ -39,13 +18,18 @@ const Projects = () => {
 					<i className={`${ProjectsCSS.icon} fas fa-search-plus`} />
 				</div>
 			</div>
-      <div className={ProjectsCSS.items}>
-			<div className={ProjectsCSS.content}>
-			
+
+      <div 
+				onClick={() => setIsModelOpened(true)} className={ProjectsCSS.items}>
+					<div className={ProjectsCSS.content}>
 					<img src={Covid} alt="COVID-19 Project Screenshot" />
 					<i className={`${ProjectsCSS.icon} fas fa-search-plus`} />
 				</div>
+				<CovidM 
+					isOpened={isModelOpened} 
+        	onClose={() => setIsModelOpened(false)} />
 			</div>
+
 			<div className={ProjectsCSS.items}>
 				<div className={ProjectsCSS.content}>
 					<img src={Budget} alt="Spending Tracker Project Screenshot" />
@@ -59,7 +43,6 @@ const Projects = () => {
 				</div>
 			</div>
 		</div>
-  
 	);
 };
 

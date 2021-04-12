@@ -1,7 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import ModalCSS from './Modal.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
+import ModalCSS from './Modal.module.css';
+import React from 'react';
 
   const backdropVariants = {
     initial: {opacity: 1},

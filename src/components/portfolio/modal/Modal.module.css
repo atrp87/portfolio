@@ -27,7 +27,7 @@
 }
  */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -47,4 +47,23 @@
   background-color: sandybrown;
   border-radius: 10px;
   text-align: center;
+} */
+
+.modal {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50);
+  background: #2c2c36;
+  z-index: 3;
+  padding: 10px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, .7);
 }

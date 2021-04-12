@@ -1,4 +1,4 @@
-import AboutCSS from './About.module.css';
+// import AboutCSS from './About.module.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import React from 'react';

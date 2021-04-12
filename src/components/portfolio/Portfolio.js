@@ -16,16 +16,6 @@ import { motion } from 'framer-motion';
         }
     }
 
-//     const childVariants = {
-//     hidden: {
-//         opacity: 0
-//     },
-//     visible: {
-//         opacity: 1
-//     }
-// }
-// Add slide in images or too much ? (staggerChildren: 0.4)
-
 const Portfolio = () => {
     return ( 
         <motion.div className={PortfolioCSS.portfolio}
