@@ -50,14 +50,19 @@
 } */
 
 .modal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   position: fixed;
-  top: 30%;
-  left: 30%;
-  transform: translate(-50%, -50);
+  width: 60rem;
+  height: 30rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: #2c2c36;
   z-index: 3;
-  padding: 10px;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -66,4 +71,38 @@
   bottom: 0;
   z-index: 2;
   background-color: rgba(0, 0, 0, .7);
+}
+
+.modal li {
+  display: inline-block;
+  margin: .5rem;
+  border: 1px solid #22262a;
+  padding: .5rem;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.6)
+}
+
+.modalLeft {
+  float: left;
+  border: 2px solid red;
+}
+
+.modalRight {
+  display: flex;
+  flex-wrap: ;
+  float: right;
+  width: 400px;
+  border: 2px solid green;
+}
+.modalLeft img {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0;
+  width: 400px;
+  box-sizing: border-box;
+}
+
+.close {
+  margin: 0 auto;
 }

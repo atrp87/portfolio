@@ -8,7 +8,6 @@ import CovidM from '../modal/CovidM';
 
 const Projects = () => {
 	const [isModelOpened, setIsModelOpened] = useState(false);
-	console.log('isModelOpened', isModelOpened);
 
 	return (
 		<div className={ProjectsCSS.wrapper}>
@@ -27,7 +26,7 @@ const Projects = () => {
 				</div>
 				<CovidM 
 					isOpened={isModelOpened} 
-        	onClose={() => setIsModelOpened(false)} />
+					onClose={() => setIsModelOpened(false)} />
 			</div>
 
 			<div className={ProjectsCSS.items}>
