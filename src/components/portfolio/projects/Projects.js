@@ -9,8 +9,6 @@ import Modal from '../modal/Modal';
 const Projects = () => {
 	const [isModelOpened, setIsModelOpened] = useState(false);
 
-	
-	
 	return (
 		<div className={ProjectsCSS.wrapper}>
 			<div className={ProjectsCSS.items}>
@@ -30,7 +28,7 @@ const Projects = () => {
 					<img src={Covid} alt="COVID-19 Project Screenshot" />
 					<i className={`${ProjectsCSS.icon} fas fa-search-plus`} />
 				</div>
-				 <Modal 
+				<Modal 
         isOpened={isModelOpened} 
         onClose={() => setIsModelOpened(false)}>
           <form className="login-form" onSubmit={() => isModelOpened(false)}>
