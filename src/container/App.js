@@ -12,28 +12,28 @@ function App() {
   const location = useLocation();
 
   return (
-      <div className="App">
+    <main className="App">
+      <nav>
         <Navbar />
         <Social />
-          <div className="content">
-            <AnimatePresence exitBeforeEnter>
-              <Switch location={location} key={location.key}>
-                <Route exact path="/">
-                  <About />
-                </Route>
-                <Route path="/portfolio">
-                  <Portfolio />
-                </Route>
-                <Route path="/contact">
-                  <Contact />
-                </Route>
-                <Route path="*">
-                  <Unknown />
-                </Route>
-              </Switch>
-            </AnimatePresence>
-          </div>
-      </div>
+      </nav>
+        <AnimatePresence exitBeforeEnter>
+          <Switch location={location} key={location.key}>
+            <Route exact path="/">
+              <About />
+            </Route>
+            <Route path="/portfolio">
+              <Portfolio />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="*">
+              <Unknown />
+            </Route>
+          </Switch>
+        </AnimatePresence>
+    </main>
   );
 }
 

@@ -20,26 +20,30 @@ const pageVariants = {
 
 const About = () => {
 	return (
-		<motion.div className={'wrapper'} variants={pageVariants} initial="initial" animate="final" exit="exit">
-			<div className="swipe">
-				<h1>Hi, I'm Andrew Peattie.</h1>
-			</div>
-			<div className="swipe swipe--delay">
-				<h3>Front-end Developer.</h3>
-			</div>
-			<div>
-				<p>
-					{' '}
-					I am a Software developer with industry training experience building websites and web applications. Currently
-					working with Javascript, React and MongoDB. I also have experience with Ruby, Java, PostgreSQL and Vue.
-					Looking for new and exciting opportunities as I progress within the industry.
-				</p>
-			</div>
-			<div>
-				<Link to="/portfolio">
-					<button type="button">View my work</button>
-				</Link>
-			</div>
+		<motion.div className='wrapper'
+			variants={pageVariants} 
+			initial="initial" 
+			animate="final" 
+			exit="exit">
+				<div className="swipe">
+					<h1>Hi, I'm Andrew Peattie.</h1>
+				</div>
+				<div className="swipe swipe--delay">
+					<h3>Front-end Developer.</h3>
+				</div>
+				<div>
+					<p>
+						I'm a Web Developer based in Edinburgh, Scotland with industry 
+						training experience building websites and web applications.
+						The idea of taking any design and turning it into something that 
+						is responsive and accessible keeps me motivated.
+					</p>
+				</div>
+				<div>
+					<Link to="/portfolio">
+						<button type="button">View my work</button>
+					</Link>
+				</div>
 		</motion.div>
 	);
 };

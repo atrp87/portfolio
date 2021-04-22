@@ -2,8 +2,8 @@ import ModalCSS from './Modal.module.css'
 import {createPortal} from 'react-dom';
 import React from 'react';
 
-const Modal = ({ isOpened, children, onClose }) => {
-  if (!isOpened) {
+const Modal = ({ isOpen, children, onClose }) => {
+  if (!isOpen) {
     return null;
   }
 
@@ -11,7 +11,7 @@ const Modal = ({ isOpened, children, onClose }) => {
     <div>
       <div className={ModalCSS.overlay}></div>
       <div className={ModalCSS.modal}>
-        <span className={ModalCSS.close} onClick={onClose}>X</span>
+        <i className={ `${ModalCSS.close} fas fa-times`} onClick={onClose}></i>
         <div className="modal-content">{children}</div>
       </div>
     </div>,
