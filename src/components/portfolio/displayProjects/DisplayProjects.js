@@ -1,21 +1,36 @@
-import React from 'react';
 import DisplayProjectsCSS from './DisplayProjects.module.css';
-import Projects from '../projects/Projects'
 import myPortfolio from '../../../assets/myPortfolio.png';
 import Budget from '../../../assets/spendTracker.png';
 import Covid from '../../../assets/covid19.png';
 import Pilton from '../../../assets/pycp.png';
+import React, { useState} from 'react';
+import Modal from '../modal/Modal';
 
-const DisplayProjects = ({onShow, onShow2}) => {
+const DisplayProjects = () => {
+	const [isModalOpened, setIsModalOpened] = useState(false);
+	console.log('isModalOpened', isModalOpened);
+
   return ( 
     <div className={DisplayProjectsCSS.wrapper}>
-			<div onClick={onShow} className={DisplayProjectsCSS.items}>
+			<div onClick={() => setIsModalOpened(true)} className={DisplayProjectsCSS.items}>
 				<div className={DisplayProjectsCSS.content}>
 					<img src={myPortfolio} alt="Portfolio Screenshot" />
 					<i className={`${DisplayProjectsCSS.icon} fas fa-search-plus`} />
 				</div>
-        </div>
-      <div onClick={onShow2} className={DisplayProjectsCSS.items}>
+			</div>
+			<Modal 
+				isOpened={isModalOpened} 
+				onClose={() => setIsModalOpened(false)}>
+					<section>
+            <label>1</label>
+          </section>
+			</Modal>
+
+
+
+
+
+      <div className={DisplayProjectsCSS.items}>
 					<div className={DisplayProjectsCSS.content}>
 					<img src={Covid} alt="COVID-19 Project Screenshot" />
 					<i className={`${DisplayProjectsCSS.icon} fas fa-search-plus`} />
@@ -38,4 +53,3 @@ const DisplayProjects = ({onShow, onShow2}) => {
 }
 
 export default DisplayProjects;
-

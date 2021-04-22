@@ -1,16 +1,9 @@
-import React, { useState } from 'react';
-import Modal from '../modal/Modal';
 import DisplayProjects from '../displayProjects/DisplayProjects';
+import React from 'react';
 
-const Projects = ({onShow}) => {
-  const [isOpen, setIsModelOpened] = useState(false);
-
+const Projects = () => {
 	return (
-		<>
-  <DisplayProjects
-    onClick={onShow}
-  />
-		</>
+		<DisplayProjects />
 	);
 };
 
