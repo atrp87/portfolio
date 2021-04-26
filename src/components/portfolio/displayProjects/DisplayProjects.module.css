@@ -96,12 +96,18 @@
 	color: #fff;
 }
 
-.modalLeft {
-	    width: 60rem;
-    height: 100%;
-    display: inline-block;
+/* Inner Model Content, { children } */
+
+.modalRight{
+	flex: 1;
+	padding: 1.5rem;
+  height: 100%;
+  display: inline-block;
+	border-left: 2px solid rgba(0, 0, 0, .9)
 }
 
-.modalRight {
-	background-color: blue;
+.modalLeft {
+	flex: 1;
+  height: 100%;
+  display: inline-block;
 }

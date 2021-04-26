@@ -23,7 +23,7 @@ const About = () => {
 		<motion.div className='wrapper'
 			variants={pageVariants} 
 			initial="initial" 
-			animate="final" 
+			animate="final" 													
 			exit="exit">
 				<div className="swipe">
 					<h1>Hi, I'm Andrew Peattie.</h1>
@@ -35,8 +35,10 @@ const About = () => {
 					<p>
 						I'm a Web Developer based in Edinburgh, Scotland with industry 
 						training experience building websites and web applications.
+					</p>
+					<p>
 						The idea of taking any design and turning it into something that 
-						is responsive and accessible keeps me motivated.
+						is responsive and accessible keeps me motivated & engaged.
 					</p>
 				</div>
 				<div>

@@ -7,19 +7,23 @@ input, textarea, button {
     font-family: inherit
 }
 
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #171a1d;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background-color: #fff;
+}
+::-webkit-scrollbar-track {
+    border-radius: 12px;
+    background-color: #171a1d;
+}
+
 html {
     height: 100%;
     font-size: 62.5%;
-}
-
-@media only screen and (max-width: 62.5em) {
-html {
-    font-size: 55.5%;
-}
-}
-
-body > #root > main {
-    min-height: 100vh;
 }
 
 body {
@@ -27,7 +31,6 @@ body {
     font-size: 19px;
     color: #fff;
     box-sizing: border-box;
-    margin: 0;
     background-color: #23232d;
     -webkit-font-smoothing: antialiased;
 }
@@ -40,6 +43,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     color: rgba(255, 255, 255, 0.6);
-    line-height: 35px;
+    line-height: 33px;
     text-align: center;
 }

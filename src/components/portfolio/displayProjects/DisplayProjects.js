@@ -10,7 +10,7 @@ import Modal from '../modal/Modal';
 const DisplayProjects = () => {
 	const [isModalOpened1, setIsModalOpened1] = useState(false);
 	const [isModalOpened2, setIsModalOpened2] = useState(false);
-	// FIND a more efficient way of state use / reusable Modal component.
+	// FIND a more efficient way of state use (useEffect ?) / reusable Modal component.
 	// && Separate component for image displays / modal.
 
   return ( 
@@ -26,11 +26,11 @@ const DisplayProjects = () => {
 			<Modal 
 				isOpened={isModalOpened1} 
 				onClose={() => setIsModalOpened1(false)}>
-						<div className='modal-left'>
+						<div className={DisplayProjectsCSS.modalLeft}>
 							<img src={CovidGIF} alt="Portfolio GIF"/>
 						</div>
-						<div className="modal-right">
-							<h3>My Portfolio</h3>
+						<div className={DisplayProjectsCSS.modalRight}>
+							<h3>My Portfolio.</h3>
 								<ul>
 									<li>React.JS</li>
 									<li>JavaScript</li>
@@ -38,7 +38,9 @@ const DisplayProjects = () => {
 									<li>REACT ROUTER</li>
 									<li>REACT PORTALS</li>
 								</ul>
+								<h4>About.</h4>
 								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsam, asperiores dolorem impedit neque dolores sint praesentium laudantium? Alias veritatis incidunt maxime a molestiae amet nam exercitationem laborum quod? Debitis dicta assumenda exercitationem maxime a est veniam sequi quasi commodi soluta maiores, officiis similique rerum veritatis ex nemo incidunt consectetur.
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsam, asperiores dolorem impedit neque dolores sint praesentium laudantium? Alias veritatis incidunt maxime a molestiae amet nam exercitationem laborum quod? Debitis dicta assumenda exercitationem maxime a est veniam sequi quasi commodi soluta maiores, officiis similique rerum veritatis ex nemo incidunt consectetur.
 								</p>
 								<button>Live Version</button>

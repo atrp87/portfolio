@@ -2,12 +2,11 @@
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 10px;
 }
-
 
 .contact button:hover {
     background-color: #2c3383;
+    margin-bottom: 1em;
 }
 
 .contact a {
@@ -25,3 +24,24 @@
     flex-wrap: wrap;
     gap: 25px;
 }
+
+
+/* @media screen and (width: 320px) {
+    .contact h1 {
+    font-size: 0.7em;
+    }
+} */
+
+/* @media screen and (width: 320px) {
+    .contact p {
+    line-height: 30px;
+    width: 1000px;
+    }
+}
+
+
+@media screen and (min-width: 2560px) {
+    .contact p {
+    font-size: 1.4em;
+    }
+} */

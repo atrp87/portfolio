@@ -25,7 +25,7 @@ const Portfolio = () => {
             exit='exit'
         >
             <h1>Portfolio.</h1>
-            <p>Here are a few projects I've worked on recently.</p>
+            <p>Here are a few projects I've worked on recently, Click an image for project information and more.</p>
             <Projects />
         </motion.div>
     );
