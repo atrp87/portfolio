@@ -1,5 +1,5 @@
 .unknown h1 {
-  font-size: 45px;
+  font-size: 6rem;
   padding-left: 19px;
 }
 
@@ -16,7 +16,8 @@
 
 .unknown a {
   text-decoration: none;
-  line-height: 35px;
+  font-size: 2.2rem;
+	line-height: 3.5rem;
   color: #fff;
 }
 

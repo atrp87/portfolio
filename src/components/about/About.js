@@ -43,7 +43,7 @@ const About = () => {
 				</div>
 				<div>
 					<Link to="/portfolio">
-						<button type="button">View my work</button>
+						<button type="button">view my work</button>
 					</Link>
 				</div>
 		</motion.div>

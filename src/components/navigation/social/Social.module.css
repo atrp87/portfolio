@@ -3,11 +3,8 @@
   top: 50%;
   transform: translate(-50%, -50%);
   position: fixed;
+  font-size: 3rem;
   z-index: 1;
-}
-
-.socialWrapper {
-  font-size: 33px;
 }
 
 .socialWrapper ul li {
@@ -23,13 +20,6 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-.socialWrapper ul li .fab, .far, .fas {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .socialWrapper ul li.linkedin{
   background: #3b5998;
 }
@@ -39,7 +29,7 @@
 }
 
 .socialWrapper ul li.email{
-  background: #4dc247;
+  background: #909090;
 }
 
 .socialWrapper ul li.resume{
@@ -55,7 +45,7 @@
 }
 
 .socialWrapper ul li.email div.slider{
-  background: #82d47e;
+  background: #D8D8D8;
 }
 
 .socialWrapper ul li.resume div.slider{
@@ -99,8 +89,14 @@
   color: #fff;
 }
 
-@media only screen and (max-width: 320px) {
-.socialWrapper, li {
-  
-}
+@media screen and (max-width: 960px) {
+  .socialWrapper ul li {
+
+  }
+  .slider {
+    
+  }
+  .slider p {
+    
+  }
 }

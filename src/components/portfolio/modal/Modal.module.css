@@ -1,6 +1,6 @@
 .modal {
   display: flex;
-  border-radius:20px;
+  border-radius: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -36,9 +36,9 @@
 
 .close {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  font-size: 3rem;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.5rem;
   cursor: pointer;
 }
 
@@ -54,7 +54,7 @@
   width: 50rem;
   height: 100%;
 	object-fit: fill;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 15px 0px 0px 15px;
 }
 
 .modal .content {
@@ -96,7 +96,7 @@ button {
 	color: #fff;
 	background-color: #323a96;
 	border: none;
-	border-radius: 5px;
+	border-radius: 3px;
 	cursor: pointer;
 	letter-spacing: 0.1rem;
 }

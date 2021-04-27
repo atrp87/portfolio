@@ -2,6 +2,7 @@ import FormCSS from './Form.module.css';
 import React, { useState } from 'react';
 import axios from 'axios';
 
+//https://formspree.io/
 const Form = () => {
 	const [ status, setStatus ] = useState({
 		submitted: false,
@@ -56,7 +57,8 @@ const Form = () => {
 			.then((response) => {
 				handleServerResponse(
 					true,
-					'Thank you, your message has been submitted.' // Insert CSS
+					'Thank you, your message has been submitted.' 
+					// Add out put or submitting button clear ?
 				);
 			})
 			.catch((error) => {
@@ -88,7 +90,10 @@ const Form = () => {
 				required 
 				name="message" />
 			<button type="submit" disabled={status.submitting}>
-				{!status.submitting ? !status.submitted ? 'Submit' : 'Submitted' : 'Submitting...'}
+				{!status.submitting ? !status.submitted ? 
+				'Submit' : 
+				'Submitted' : 
+				'Submitting...'}
 			</button>
 		</form>
 	);

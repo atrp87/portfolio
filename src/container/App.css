@@ -2,6 +2,9 @@
     color: #fff;
     background-color: rgba(50,58,150,0.7);
 }
+* {
+    box-sizing: border-box;
+}
 
 input, textarea, button {
     font-family: inherit
@@ -23,26 +26,25 @@ input, textarea, button {
 
 html {
     height: 100%;
-    font-size: 62.5%;
+    font-size: 70%;
 }
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 19px;
     color: #fff;
-    box-sizing: border-box;
     background-color: #23232d;
     -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-size: 2.2rem;
     font-family: 'Poppins', sans-serif;
-    line-height: 1.2em;
     color: #fff;
 }
 
 p {
     color: rgba(255, 255, 255, 0.6);
-    line-height: 33px;
+    font-size: 2rem;
+	line-height: 3.2rem;
     text-align: center;
 }

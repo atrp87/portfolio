@@ -1,12 +1,14 @@
+
 .form label {
 	text-align: left;
 	display: block;
 	color: rgba(255, 255, 255, 0.6);
 	line-height: 25px;
+	justify-content: center;
 }
 
 .form h1 {
-	font-size: 45px;
+	font-size: 1.5em;
 	margin-bottom: 30px;
 }
 
@@ -53,3 +55,16 @@
 	cursor: pointer;
 	letter-spacing: 1px;
 }
+
+/* @media screen and (max-width: 960px) {
+    .form {
+			width: 80%;
+    }
+
+    /* nav ul {
+       
+    }
+
+    nav li {
+        
+    } */
