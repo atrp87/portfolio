@@ -1,8 +1,8 @@
 import FormCSS from './Form.module.css';
 import React, { useState } from 'react';
 import axios from 'axios';
-
 //https://formspree.io/
+
 const Form = () => {
 	const [ status, setStatus ] = useState({
 		submitted: false,
@@ -68,28 +68,30 @@ const Form = () => {
 
 	return (
 		<form className={FormCSS.form} onSubmit={handleOnSubmit}>
-			<label htmlFor="name">name:</label>
+			<label htmlFor='name'>name:</label>
 			<input 
 				onChange={handleOnChange} 
-				value={inputs.name} id="name" 
-				type="text" 
+				value={inputs.name} 
+				id='name' 
+				type='text' 
 				required 
-				name="name" />
-			<label htmlFor="email">email:</label>
+				name='name' />
+			<label htmlFor='email'>email:</label>
 			<input 
 				onChange={handleOnChange} 
 				value={inputs.email} 
-				id="email" type="email" 
+				id='email' 
+				type='email' 
 				required 
-				name="_replyto" />
-			<label htmlFor="message">message:</label>
+				name='_replyto' />
+			<label htmlFor='message'>message:</label>
 			<textarea 
 				onChange={handleOnChange} 
 				value={inputs.message} 
-				id="message" 
+				id='message' 
 				required 
-				name="message" />
-			<button type="submit" disabled={status.submitting}>
+				name='message' />
+			<button type='submit' disabled={status.submitting}>
 				{!status.submitting ? !status.submitted ? 
 				'Submit' : 
 				'Submitted' : 

@@ -1,51 +1,57 @@
 .socialWrapper {
-  position: absolute;
+  position: fixed;
   top: 50%;
   transform: translate(-50%, -50%);
-  position: fixed;
-  font-size: 3rem;
   z-index: 1;
 }
 
-.socialWrapper ul li {
-  width: 50px;
-  height: 50px;
-  line-height: 60px;
-  text-align: center;
-  position: relative;
-  margin: 10px 0;
+.socialWrapper ul {
   list-style: none;
+}
+
+.socialWrapper li {
   cursor: pointer;
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-.socialWrapper ul li.linkedin{
+.socialWrapper a {
+  height: 50px;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+  margin: 10px 0;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+
+.socialWrapper li.linkedin{
   background: #3b5998;
 }
 
-.socialWrapper ul li.github{
+.socialWrapper li.github{
   background: #444d56;
 }
 
-.socialWrapper ul li.email{
-  background: #909090;
+.socialWrapper li.email{
+  background: #6fc2b0;
 }
 
-.socialWrapper ul li.resume{
+.socialWrapper li.resume{
   background: #6665d2;
 }
 
-.socialWrapper ul li.linkedin div.slider{
+.socialWrapper li.linkedin div.slider{
   background: #627aac;
 }
 
-.socialWrapper ul li.github div.slider{
+.socialWrapper li.github div.slider{
   background: #6a737d;
 }
 
-.socialWrapper ul li.email div.slider{
-  background: #D8D8D8;
+.socialWrapper li.email div.slider{
+  background: #96C2B8;
 }
 
 .socialWrapper ul li.resume div.slider{
@@ -56,7 +62,7 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 51px;
+  left: 2.9em;
   width: 0px;
   height: 50px;
   border-radius: 3px;
@@ -68,7 +74,6 @@
   text-align: center;
   font-size: 16px;
   font-weight: 900;
-  color: #fff;
   line-height: 20px;
   opacity: 0;
   transition: all 0.6s ease;
@@ -83,20 +88,48 @@
   opacity: 1;
   transition: all 1s 0.2s ease;
 }
-
-.socialWrapper a {
-  text-decoration: none;
-  color: #fff;
-}
-
-@media screen and (max-width: 960px) {
-  .socialWrapper ul li {
-
+/* 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .socialWrapper a {
+    height: 30px;
+    padding: 0.5rem;
+    margin: 5px 0;
+    font-size: 15px;
+  }
+  .socialWrapper ul {
+    padding-left: 20px;
   }
   .slider {
-    
+    left: 32px;
+    width: 0px;
+    height: 30px;
+    line-height: 2px;
   }
-  .slider p {
-    
+    .slider p{
+    line-height: 1px;
+  }
+  .socialWrapper ul li:hover .slider {
+  width: 100px;
+  transition: all 0.5s ease;
   }
 }
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
+  .socialWrapper a {
+    height: 40px;
+    padding: 0.8rem;
+    margin: 7px 0;
+    font-size: 0.9em;
+  }
+  .socialWrapper ul {
+    padding-left: 29px;
+  }
+  .slider {
+    left: 43px;
+    width: 0px;
+    height: 40px;
+  }
+    .slider p{
+    line-height: 10px;
+  }
+} */

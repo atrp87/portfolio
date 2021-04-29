@@ -18,23 +18,22 @@ import Form from './form/Form';
 
 const Contact = () => {
     return ( 
-            <motion.div className={ContactCSS.contact}
+        <motion.div className={ContactCSS.contact}
                 variants={pageVariants}
                 initial='initial'
                 animate='final'
                 exit='exit'
-            >
+        >
                 <h1>Get in touch.</h1>
-                <p>Social Networks.</p>
                 <div className={ContactCSS.socialContainer}>
                     <a href="https://linkedin.com/in/andrew-peattie" title="GitHub Profile Link">
                         <span title="LinkedIn">
-                            <i className="fab fa-linkedin fa-2x"></i>
+                            <i className="fab fa-linkedin"></i>
                         </span>
                     </a>
                     <a href="https://github.com/atrp87" title="GitHub Profile Link">
                         <span title="GitHub">
-                            <i className="fab fa-github-square fa-2x"></i>
+                            <i className="fab fa-github-square"></i>
                         </span>
                     </a>
                 </div>

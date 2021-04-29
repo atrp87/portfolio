@@ -1,13 +1,37 @@
+html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
 *::selection {
     color: #fff;
     background-color: rgba(50,58,150,0.7);
 }
-* {
-    box-sizing: border-box;
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    background-color: #23232d;
+    font-size: 18px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
 }
 
-input, textarea, button {
-    font-family: inherit
+input, textarea {
+    border: 1px solid #c6c6c6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    line-height: 1.4em;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
 }
 
 ::-webkit-scrollbar {
@@ -22,29 +46,4 @@ input, textarea, button {
 ::-webkit-scrollbar-track {
     border-radius: 12px;
     background-color: #171a1d;
-}
-
-html {
-    height: 100%;
-    font-size: 70%;
-}
-
-body {
-    font-family: 'Josefin Sans', sans-serif;
-    color: #fff;
-    background-color: #23232d;
-    -webkit-font-smoothing: antialiased;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-size: 2.2rem;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-}
-
-p {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 2rem;
-	line-height: 3.2rem;
-    text-align: center;
 }

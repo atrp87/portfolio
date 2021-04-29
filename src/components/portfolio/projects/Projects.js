@@ -10,6 +10,8 @@ import Modal from '../modal/Modal';
 const DisplayProjects = () => {
 	const [isModalOpened1, setIsModalOpened1] = useState(false);
 	const [isModalOpened2, setIsModalOpened2] = useState(false);
+	const [isModalOpened3, setIsModalOpened3] = useState(false);
+	const [isModalOpened4, setIsModalOpened4] = useState(false);
 	// FIND a more efficient way of state use (useEffect ?) / reusable Modal component.
 	// && Separate component for image displays / modal.
 

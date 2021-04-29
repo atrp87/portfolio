@@ -1,39 +1,33 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 85vh;
+	align-items: center;
+	justify-content: center;
+}
+
 .wrapper h1 {
 	display: block;
-	font-size: 7rem;
-	line-height: 1rem;
 	opacity: 0;
 	animation: fade .01s ease-out 1.75s forwards;
 }
 
 .wrapper h3 {
 	display: block;
-	font-size: 4rem;
-	line-height: 2rem;
 	opacity: 0;
 	animation: fade .01s ease-out 2.45s forwards;
 }
 
 .wrapper p {
 	margin: 0 auto;
-	font-size: 2rem;
 	width: 80%;
-	margin-bottom: 2.1rem;
+	margin-top: 1rem;
+	margin-bottom: 0.8rem;
 	opacity: 0;
 	animation: fadeInAnimation ease 3s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 	animation-delay: 3s;
-}
-
-.wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 85vh;
-	margin: 0 auto;
-	align-items: center;
-	justify-content: center;
-	
 }
 
 .swipe {
@@ -105,23 +99,24 @@
 }
 
 .wrapper button {
-	padding: 0px 1.8rem;
-	height: 4.5rem;
-  font-size: 2rem;
-	opacity: 0;
+	padding: 0px 1.6rem;
+	font-size: 16px;
+	font-weight: 600;
 	background-color: #323a96;
-	border: none;
 	border-radius: 5px;
 	cursor: pointer;
+	border: none;
+	margin-top: 1rem;
 	margin-bottom: 1rem;
+	opacity: 0;
 	animation: fadeInAnimation ease 3s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 	animation-delay: 4s;
 }
+
 .wrapper button:hover {
 	background-color: #2c3383;
-
 }
 
 @keyframes fadeInAnimation {
@@ -133,11 +128,31 @@
 	}
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* @media only screen and (min-device-width : 490px) and (max-device-width : 1200px) {
+    .contact {
+        max-width: 70%;
+    }
+} */
+
+/* @media only screen and (min-device-width : 320px) and (max-device-width : 912px) {
 	.wrapper {
-	width: 1%;
+		padding: 2px 2px 2px 2px;
 	}
-}
+	.wrapper h1 {
+	font-size: 2.3rem;
+	}
+	.wrapper h3 {
+		font-size: 1.4rem;
+	}
+	.wrapper p {
+		font-size: 1rem;
+	}
+		.wrapper button {
+		font-size: 1rem;
+		height: 4rem;
+		padding: 0px 1.2rem;
+	}
+} */
 /* @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	.wrapper h1 {
 		font-size: 2.2rem;
