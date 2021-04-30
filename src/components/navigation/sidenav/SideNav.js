@@ -26,7 +26,7 @@ const SideNav = () => {
       <li>
         <a 
           href='mailto:drewpeattie@hotmail.com?subject=Hello Andrew' 
-          class={`${SideNavCSS} entypo-mail`} 
+          className={`${SideNavCSS} entypo-mail`} 
           target='_blank' rel='noreferrer'>
           <span>Email</span>
         </a>

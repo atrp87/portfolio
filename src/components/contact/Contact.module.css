@@ -1,7 +1,6 @@
 .contact {
     max-width: 50%;
     margin: 0 auto;
-    text-align: center;
 }
 
 .contact a {
@@ -14,27 +13,10 @@
 }
 
 .contact a:hover {
-    color: #7289da;
+    color: #ff3d53;
 }
 
-/* @media only screen and (min-device-width : 490px) and (max-device-width : 1200px) {
-    .contact {
-        max-width: 70%;
-    } */
-
-
-/* @media only screen and (min-device-width : 320px) and (max-device-width : 489px) {
-    .contact {
-        max-width: 70%;
-    }
-    .contact h1 {
-        font-size: 2.7rem;
-    }
-    .contact p {
-    font-size: 1.8rem;
-    }
-    .contact i {
-    font-size: 3rem;
-    }   
-} */
+.redCharacter {
+	color: #ff3d53;
+}
 

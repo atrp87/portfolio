@@ -45,8 +45,9 @@ ul {
 
 #stickySocial a:hover span {
   left: 100%;
-  background-color: #37373e;
+  font-weight: 900;
   color: #edecf2;
+  background-color: #37373e;
 }
 
 #stickySocial a[class*='linkedin'] { 

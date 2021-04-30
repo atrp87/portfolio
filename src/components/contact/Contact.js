@@ -8,7 +8,7 @@ import Form from './form/Form';
         },
         final: {
             opacity: 1,
-            transition: {delay: 0.6, duration: 0.8}
+            transition: {delay: 0.4, duration: 0.6}
         },
         exit: {
             opacity: 0,
@@ -24,15 +24,15 @@ const Contact = () => {
             animate='final'
             exit='exit'
         >
-            <h1>Get in touch.</h1>
+            <h1>Get in touch<span className={ContactCSS.redCharacter}>.</span></h1>
                 <div className={ContactCSS.socialContainer}>
                     <a href="https://linkedin.com/in/andrew-peattie" title="GitHub Profile Link">
-                        <span title="LinkedIn">
+                        <span>
                             <i className="fab fa-linkedin"></i>
                         </span>
                     </a>
                     <a href="https://github.com/atrp87" title="GitHub Profile Link">
-                        <span title="GitHub">
+                        <span>
                             <i className="fab fa-github-square"></i>
                         </span>
                     </a>

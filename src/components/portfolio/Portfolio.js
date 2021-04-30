@@ -8,13 +8,13 @@ import { motion } from 'framer-motion';
         },
         final: {
             opacity: 1,
-            transition: {delay: 0.6, duration: 0.8}
+            transition: {delay: 0.4, duration: 0.6}
         },
         exit: {
             opacity: 0,
             transition: {ease: 'easeInOut'}
         }
-    }
+    };
 
 const Portfolio = () => {
     return ( 
@@ -24,7 +24,7 @@ const Portfolio = () => {
             animate='final'
             exit='exit'
         >
-            <h1>Portfolio.</h1>
+            <h1>Portfolio<span className='redCharacter'>.</span></h1>
             <p>
                 Here are a few projects I've worked on recently, Click an image for project information and more.
             </p>

@@ -57,8 +57,7 @@ const Form = () => {
 			.then((response) => {
 				handleServerResponse(
 					true,
-					'Thank you, your message has been submitted.' 
-					// Add out put or submitting button clear ?
+					'Thank you, your message has been sent.'
 				);
 			})
 			.catch((error) => {
@@ -67,37 +66,61 @@ const Form = () => {
 	};
 
 	return (
-		<form className={FormCSS.form} onSubmit={handleOnSubmit}>
-			<label htmlFor='name'>name.</label>
-			<input 
-				onChange={handleOnChange} 
-				value={inputs.name} 
-				id='name' 
-				type='text' 
-				required 
-				name='name' />
-			<label htmlFor='email'>email.</label>
-			<input 
-				onChange={handleOnChange} 
-				value={inputs.email} 
-				id='email' 
-				type='email' 
-				required 
-				name='_replyto' />
-			<label htmlFor='message'>message.</label>
-			<textarea 
-				onChange={handleOnChange} 
-				value={inputs.message} 
-				id='message' 
-				required 
-				name='message' />
-			<button type='submit' disabled={status.submitting}>
-				{!status.submitting ? !status.submitted ? 
-				'Submit' : 
-				'Submitted' : 
-				'Submitting...'}
-			</button>
-		</form>
+		<section className={FormCSS.formContainer}>
+			<form
+				onSubmit={handleOnSubmit}
+				className={FormCSS.form}>
+				<div className={FormCSS.formGroup}>
+					<label className={FormCSS.formLabel} htmlFor='name'>Your Name</label>
+					<input 
+						onChange={handleOnChange} 
+						value={inputs.name} 
+						className={FormCSS.formInput} 
+						id='name' 
+						type='text' 
+						name='name' 
+						placeholder='Name...' 
+						required 
+					/>
+				</div>
+				<div className={FormCSS.formGroup}>
+					<label className={FormCSS.formLabel} htmlFor='email'>Your Email</label>
+					<input 
+						onChange={handleOnChange} 
+						value={inputs.email} 
+						className={FormCSS.formInput} 
+						id='email' 
+						type='email' 
+						name='_replyto' 
+						placeholder='Email...' 
+						required 
+					/>
+				</div>
+				<div className={FormCSS.formGroup}>
+					<label className={FormCSS.formLabel} htmlFor='message'>Your Message</label>
+					<textarea 
+						onChange={handleOnChange} 
+						value={inputs.message} 
+						className={FormCSS.formInput} 
+						id='message' 
+						name='text' 
+						rows='5' 
+						placeholder='Message...' 
+						required
+						>
+					</textarea>
+				</div>
+				<div className={FormCSS.formGroup}>
+					<button type='submit' disabled={status.submitting}>
+					{!status.submitting ? !status.submitted ? 
+					'Submit' : 
+					'Submitted' : 
+					'Submitting...'}
+					</button>
+				</div>
+			</form>
+		</section>
+
 	);
 };
 

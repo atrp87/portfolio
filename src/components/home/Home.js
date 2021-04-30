@@ -6,11 +6,11 @@ import './Home.css';
 
 const pageVariants = {
 	initial: {
-		opacity: 1
+		opacity: 0
 	},
 	final: {
 		opacity: 1,
-		transition: { delay: 0.6, duration: 0.8 }
+		transition: { delay: 0.4, duration: 0.6 }
 	},
 	exit: {
 		opacity: 0,
@@ -20,16 +20,16 @@ const pageVariants = {
 
 const Home = () => {
 	return (
-		<motion.div className='container'
+		<motion.div className='flexbox-home'
 			variants={pageVariants} 
 			initial="initial" 
 			animate="final" 													
 			exit="exit">
-				<div className="content"></div>
-				<div className="swipe">
-					<h1>Hi, I'm Andrew Peattie.</h1>
+				<div>
+					<h1>Hi, I'm Andrew Peattie<span className='redCharacter'>.</span>
+					</h1>
 				</div>
-				<div className="swipe swipe--delay">
+				<div>
 					<h3>Front-end Developer.</h3>
 				</div>
 				<div>
@@ -44,8 +44,9 @@ const Home = () => {
 				</div>
 				<div>
 					<Link to="/portfolio">
-					
-					
+						<div className="btn btn-one">
+							<span>View my work</span>
+						</div>
 					</Link>
 				</div>
 		</motion.div>
