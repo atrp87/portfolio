@@ -4,28 +4,17 @@
     text-align: center;
 }
 
-.contact button {
-    margin-bottom: 1rem;
-}
-
-.contact button:hover {
-    background-color: #2c3383;
-}
-
 .contact a {
     color: #fff;
     text-decoration: none;
 }
 
-.contact a:hover {
-    color: #7289da;
+.contact i {
+    font-size: 45px;
 }
 
-.contact .socialContainer {
-    display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
+.contact a:hover {
+    color: #7289da;
 }
 
 /* @media only screen and (min-device-width : 490px) and (max-device-width : 1200px) {

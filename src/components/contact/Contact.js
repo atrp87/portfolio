@@ -19,12 +19,12 @@ import Form from './form/Form';
 const Contact = () => {
     return ( 
         <motion.div className={ContactCSS.contact}
-                variants={pageVariants}
-                initial='initial'
-                animate='final'
-                exit='exit'
+            variants={pageVariants}
+            initial='initial'
+            animate='final'
+            exit='exit'
         >
-                <h1>Get in touch.</h1>
+            <h1>Get in touch.</h1>
                 <div className={ContactCSS.socialContainer}>
                     <a href="https://linkedin.com/in/andrew-peattie" title="GitHub Profile Link">
                         <span title="LinkedIn">

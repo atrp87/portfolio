@@ -68,7 +68,7 @@ const Form = () => {
 
 	return (
 		<form className={FormCSS.form} onSubmit={handleOnSubmit}>
-			<label htmlFor='name'>name:</label>
+			<label htmlFor='name'>name.</label>
 			<input 
 				onChange={handleOnChange} 
 				value={inputs.name} 
@@ -76,7 +76,7 @@ const Form = () => {
 				type='text' 
 				required 
 				name='name' />
-			<label htmlFor='email'>email:</label>
+			<label htmlFor='email'>email.</label>
 			<input 
 				onChange={handleOnChange} 
 				value={inputs.email} 
@@ -84,7 +84,7 @@ const Form = () => {
 				type='email' 
 				required 
 				name='_replyto' />
-			<label htmlFor='message'>message:</label>
+			<label htmlFor='message'>message.</label>
 			<textarea 
 				onChange={handleOnChange} 
 				value={inputs.message} 

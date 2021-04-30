@@ -1,11 +1,11 @@
 import Unknown from '../components/navigation/unknown/Unknown';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import Navbar from '../components/navigation/navbar/Navbar';
-import Social from '../components/navigation/social/social';
+import SideNav from '../components/navigation/sidenav/SideNav';
 import Portfolio from '../components/portfolio/Portfolio';
 import Contact from '../components/contact/Contact';
 import { AnimatePresence } from 'framer-motion';
-import About from '../components/about/About';
+import Home from '../components/home/Home';
 import './App.css';
 
 function App() {
@@ -15,12 +15,12 @@ function App() {
     <main className="App">
       <nav>
         <Navbar />
-        <Social />
+        <SideNav />
       </nav>
         <AnimatePresence exitBeforeEnter>
           <Switch location={location} key={location.key}>
             <Route exact path="/">
-              <About />
+              <Home />
             </Route>
             <Route path="/portfolio">
               <Portfolio />

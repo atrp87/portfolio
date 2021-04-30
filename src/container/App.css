@@ -1,22 +1,18 @@
 html {
-    height: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 * {
     box-sizing: border-box;
 }
-*::selection {
-    color: #fff;
-    background-color: rgba(50,58,150,0.7);
-}
 
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    color: #fff;
-    background-color: #23232d;
+    font-family: 'Overpass Mono', monospace;
+    color: #b0adad;
+    background: #37373e;
+    -webkit-font-smoothing: antialiased;
     font-size: 18px;
     line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
 }
 
 input, textarea {
@@ -24,13 +20,13 @@ input, textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
     font-weight: 900;
     line-height: 1.4em;
+    color: #edecf2;
 }
 
 p {
-    color: rgba(255, 255, 255, 0.6);
+    color: #b0adad;
     text-align: center;
 }
 
@@ -41,7 +37,7 @@ p {
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 12px;
-    background-color: #fff;
+    background-color: #b0adad;
 }
 ::-webkit-scrollbar-track {
     border-radius: 12px;

@@ -1,0 +1,143 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*='entypo-']:before {
+  font-family: 'entypo', sans-serif;
+}
+
+a { 
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#stickySocial {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  z-index: 1;
+}
+
+#stickySocial a {
+  color: #fff;
+  display: block;
+  height: 35px;
+  font: 16px 'Overpass Mono', monospace;
+  line-height: 35px;
+  position: relative;
+  text-align: center;
+  width: 35px;
+  transition: all .45s cubic-bezier(.175,.885,.32,1.275);
+}
+#stickySocial a span {
+  line-height: 35px;
+  left: -120px;
+  position: absolute;
+  text-align:center;
+  width:120px;
+}
+
+#stickySocial a:hover span {
+  left: 100%;
+  background-color: #37373e;
+  color: #edecf2;
+}
+
+#stickySocial a[class*='linkedin'] { 
+  background: #3b5998; 
+}
+#stickySocial a[class*='linkedin']:hover { 
+  background: #37373e; 
+}
+
+#stickySocial a[class*='github'] { 
+  background: #5d5d66;
+}
+#stickySocial a[class*='github']:hover { 
+  background: #37373e; 
+}
+
+#stickySocial a[class*='mail'] { 
+  background: #6fc2b0; 
+}
+#stickySocial a[class*='mail']:hover { 
+  background: #37373e; 
+}
+
+#stickySocial a[class*='user'] {
+  background: #6665d2; 
+  }
+  #stickySocial a[class*='user']:hover { 
+  background: #37373e; 
+}
+
+
+
+
+/* #stickySocial a[class*='linkedin'],
+#stickySocial a[class*='linkedin']:hover,
+#stickySocial a[class*='linkedin'] span { background: #3b5998; }
+
+#stickySocial image a[class*='github'],
+#stickySocial image a[class*='github']:hover,
+#stickySocial image a[class*='github'] span { background: #444d56; }
+
+#stickySocial a[class*='user'],
+#stickySocial a[class*='user']:hover,
+#stickySocial a[class*='user'] span { background: #6665d2; }
+
+#stickySocial a[class*='mail'],
+#stickySocial a[class*='mail']:hover,
+#stickySocial a[class*='mail'] span { background: #6fc2b0; }	 */
+
+/* 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .socialWrapper a {
+    height: 30px;
+    padding: 0.5rem;
+    margin: 5px 0;
+    font-size: 15px;
+  }
+  .socialWrapper ul {
+    padding-left: 20px;
+  }
+  .slider {
+    left: 32px;
+    width: 0px;
+    height: 30px;
+    line-height: 2px;
+  }
+    .slider p{
+    line-height: 1px;
+  }
+  .socialWrapper ul li:hover .slider {
+  width: 100px;
+  transition: all 0.5s ease;
+  }
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
+  .socialWrapper a {
+    height: 40px;
+    padding: 0.8rem;
+    margin: 7px 0;
+    font-size: 0.9em;
+  }
+  .socialWrapper ul {
+    padding-left: 29px;
+  }
+  .slider {
+    left: 43px;
+    width: 0px;
+    height: 40px;
+  }
+    .slider p{
+    line-height: 10px;
+  }
+} */

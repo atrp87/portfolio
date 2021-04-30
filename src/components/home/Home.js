@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import React from 'react';
-import './About.css';
+import './Home.css';
 
 const pageVariants = {
 	initial: {
@@ -18,13 +18,14 @@ const pageVariants = {
 	}
 };
 
-const About = () => {
+const Home = () => {
 	return (
-		<motion.div className='wrapper'
+		<motion.div className='container'
 			variants={pageVariants} 
 			initial="initial" 
 			animate="final" 													
 			exit="exit">
+				<div className="content"></div>
 				<div className="swipe">
 					<h1>Hi, I'm Andrew Peattie.</h1>
 				</div>
@@ -43,11 +44,12 @@ const About = () => {
 				</div>
 				<div>
 					<Link to="/portfolio">
-						<button type="button">view my work</button>
+					
+					
 					</Link>
 				</div>
 		</motion.div>
 	);
 };
 
-export default About;
+export default Home;
