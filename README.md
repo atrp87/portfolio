@@ -1,7 +1,9 @@
 # My Portfolio
 [[Live Version]]
 
-This project was created to showcase some of my projects i have worked on for the past year. It's a minimalist Single Page Application where I kept the UI as clear as possible.
+This project was created to showcase some of my projects i have worked on for the past year. It's a minimalist design where I kept the UI as clear as possible.
+
+![Alt Text](public/portfolio.gif)
 
 ## Built With
 * [Create React App](https://github.com/facebook/create-react-app)
